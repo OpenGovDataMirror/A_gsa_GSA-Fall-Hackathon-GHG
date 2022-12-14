@@ -1,0 +1,44 @@
+<div ng-include="'components/navbar/navbar.html'"></div>
+
+<header class="hero-unit" id="banner">
+  <div class="container">
+    <h1>GHG Emission Quick-Look</h1>
+    <p class="lead">Which government agency are you interested in?</p>
+    <div class="col-md-offset-3 col-md-6">
+      <select id="selectedAgency" style="display:none" placeholder="Type an agency name"></select>
+    </div>
+  </div>
+</header>
+
+<div class="container" id="initialGraphs" style="display:none; margin-top: 20px;">
+  <div class="row">
+    <div class="col-md-6">
+      <div id="vehiclePieChart"></div>
+    </div>
+    <div class="col-md-6">
+      <div id="emissionsBarChart"></div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-offset-2 col-md-8">
+      <p id="spiderSummary" class="summaryParagraph"></p>
+      <div id="spiderChart"></div>
+    </div>
+  </div>
+</div>
+
+<div class="container" id="executiveOrderStats" style="display:none;">
+  <div class="row">
+    <div class="col-md-12">
+      <p id="executiveOrderSummary" class="summaryParagraph col-md-offset-2 col-md-8"></p>
+      <div id="fleet-composition-chart"></div>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="container">
+      <p><a href="https://www.boozallen.com/consulting/strategic-innovation/digital">Booz Allen's Digital Interactive</a> |
+         <a href="https://github.com/bah-interactivemedia/GSA-Fall-Hackathon-GHG/">GitHub</a></p>
+  </div>
+</footer>
